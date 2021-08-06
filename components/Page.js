@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
         --red: blue;
         --black: #393939;
         --offWhite: #ededed;
+        --lightGray: #cecece;
         --bs: 0 12px 24px 0 #eaeaea;
         box-sizing: border-box;
         font-size: 10px;
