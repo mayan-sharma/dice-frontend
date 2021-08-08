@@ -24,12 +24,12 @@ export const ALL_PRODUCTS_QUERY = gql`
 
 const ProductsListStyles = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
 `;
 
 export default function Products({ page }) {
-    // these will change (no need for setState)
+    
     const { data, error, loading } = useQuery(ALL_PRODUCTS_QUERY, {
         variables: {
             skip: page * perPage - perPage,
