@@ -5,7 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
     @font-face {
         font-family: viga;
-        src: url('/public/static/Viga-Regular.ttf');
+        src: url('../public/static/Viga-Regular.ttf') format('truetype');
     }
 
     html {

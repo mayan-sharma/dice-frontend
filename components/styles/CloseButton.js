@@ -8,6 +8,7 @@ const CloseButton = styled.button`
   position: absolute;
   z-index: 2;
   right: 0;
+  top: 1.5rem;
 `;
 
 export default CloseButton;
