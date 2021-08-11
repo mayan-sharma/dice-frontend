@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import DeleteProduct from './DeleteProduct';
+import AddToCart from './AddToCart';
 import ItemStyles from './styles/ItemStyles';
 import TitleStyles from './styles/Title';
 import PriceTagStyles from './styles/PriceTag';
@@ -25,6 +26,7 @@ export default function Product({ product }) {
                         id: product.id,
                     }
                 }}>Edit</Link>
+                <AddToCart id={product.id} />
                 <DeleteProduct id={product.id}>Delete</DeleteProduct>
             </div>
         </ItemStyles>
