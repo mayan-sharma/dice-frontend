@@ -1,5 +1,7 @@
-import formatMoney from '../lib/formatMoney';
 import styled from 'styled-components';
+
+import formatMoney from '../lib/formatMoney';
+import RemoveFromCart from './RemoveFromCart';
 
 const CartItemStyles = styled.li`
     padding: 1rem 0;
@@ -26,6 +28,7 @@ export default function CartItem({ cartItem }) {
                 <h3>{name}</h3>
                 <p>{formatMoney(price * cartItem.quantity)} - <em> &times;{cartItem.quantity}</em></p>
             </div>
+            <RemoveFromCart id={cartItem.id} />
         </CartItemStyles>
     );
 }
