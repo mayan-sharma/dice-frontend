@@ -1,7 +1,8 @@
-import { useUser } from './User';
 import CartItem from './CartItem';
+import CheckoutForm from './Checkout';
 import formatMoney from '../lib/formatMoney';
 import { useCart } from '../lib/cartState';
+import { useUser } from './User';
 import CartStyles from './styles/CartStyles';
 import CloseButtonStyles from './styles/CloseButton';
 
@@ -25,6 +26,7 @@ export default function Cart() {
             </ul>          
             <footer>
                 <p>{formatMoney(totalPrice(user.cart))}</p>
+                <CheckoutForm />
             </footer> 
         </CartStyles>        
     );
